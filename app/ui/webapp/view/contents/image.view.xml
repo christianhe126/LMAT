@@ -1,0 +1,19 @@
+<mvc:View controllerName="ui.controller.contents.image"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:unified="sap.ui.unified">
+    <VBox justifyContent="Start">
+                                <Image
+                                    id="myImage"
+                                    width="{path: 'content/source', formatter: '.formatter.calculateImageWidth'}"
+                                    src="{content/source}"/>
+                                <unified:FileUploader
+                                    id="fileUploader"
+                                    change="onFileChange"
+                                    buttonText="Upload Image"/>
+                                <!--<Button
+                                    text="Upload Image"
+                                    press="onUploadPress" />-->
+    </VBox>
+</mvc:View>

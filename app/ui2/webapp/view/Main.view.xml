@@ -1,0 +1,133 @@
+<mvc:View
+    controllerName="ui.controller.main"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:tnt="sap.tnt"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:table="sap.ui.table"
+    xmlns:f="sap.f"
+    xmlns:w="sap.ui.integration.widgets"
+    xmlns:u="sap.ui.unified"
+    xmlns:card="sap.f.cards"
+    xmlns:core="sap.ui.core"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:viz="sap.viz.ui5.controls"
+    xmlns:viz.data="sap.viz.ui5.data"
+    xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+    xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+    xmlns:dnd="sap.ui.core.dnd"
+>
+    <SplitApp
+		id="SplitApp"
+		initialDetail="detail"
+		initialMaster="master">
+		<detailPages>
+			<Page
+				id="detail"
+				title="Detail 1"
+				backgroundDesign= "Solid">
+				<Label id="_IDGenLabel1" text="Detail page 1" />
+				<Button id="_IDGenButton1" text="Download" press=".downloadPPTX" />
+			</Page>
+			<Page
+				id="detailDetail"
+				title="Detail Detail"
+				backgroundDesign= "Solid"
+				showNavButton="true"
+				navButtonPress=".onPressDetailBack">
+				<form:SimpleForm id="_IDGenSimpleForm1">
+                    <form:content>
+                        <Label id="_IDGenLabel10" text="Name"/>
+                        <Input id="_IDGenInput1" value="{selected>/type}" editable="true"/>
+                        <Label id="_IDGenLabel11" text="Description"/>
+                        <Input id="_IDGenInput2" value="{selected>/id}" editable="true"/>
+                        <Button id="_IDGenButton4" text="Save" type="Emphasized" press="onSave"/>
+                    </form:content>
+                </form:SimpleForm>
+			</Page>
+		</detailPages>
+		<masterPages>
+			<Page
+				id="master"
+				title="Master 1"
+				backgroundDesign= "List">
+                <table:TreeTable
+					id="TreeTable"
+					rows="{path:'/', parameters: {arrayNames:['nodes']}}"
+					selectionMode="MultiToggle"
+					enableSelectAll="false"
+					ariaLabelledBy="title"
+                    cellClick="onTreeCellClick">
+                    <table:extension>
+                        <OverflowToolbar id="_IDGenOverflowToolbar1" style="Clear">
+                            <Title id="title" text="Clothing"/>
+                            <Button id="cut" text="Cut" icon="sap-icon://scissors" press="onCut"/>
+                            <Button id="paste" text="Paste" icon="sap-icon://paste" press="onPaste" enabled="false"/>
+                            <ToolbarSpacer id="_IDGenToolbarSpacer1"/>
+                            <Button id="_IDGenButton2" text="Collapse all" press="onCollapseAll"/>
+                            <Button id="_IDGenButton3" text="Expand first level" press="onExpandFirstLevel"/>
+                            <Button id="_IDGenButton5" text="Export to .pptx" press="exportPressed"/>
+                        </OverflowToolbar>
+                    </table:extension>
+                    <table:dragDropConfig>
+                        <dnd:DragDropInfo id="_IDGenDragDropInfo1"
+                                sourceAggregation="rows"
+                                targetAggregation="rows"
+                                dragStart="onDragStart"
+                                drop="onDrop"/>
+                    </table:dragDropConfig>
+                    <table:columns>
+                        <table:Column id="_IDGenColumn1" width="9rem">
+                            <Label id="_IDGenLabel8" text="ID"/>
+                            <table:template>
+                                <Text id="_IDGenText2" text="{id}" wrapping="false"/>
+                            </table:template>
+                        </table:Column>
+                        <table:Column id="_IDGenColumn2" width="9rem">
+                            <Label id="_IDGenLabel9" text="Type"/>
+                            <table:template>
+                                <Text id="_IDGenText3" text="{type}" wrapping="false"/>
+                            </table:template>
+                        </table:Column>
+                    </table:columns>
+                </table:TreeTable>
+            <!--
+				<Tree
+                    id="Tree"
+                    items="{path: '/'}">
+                    <dragDropConfig>
+                            <dnd:DragDropInfo id="_IDGenDragDropInfo1"
+                                    sourceAggregation="items"
+                                    targetAggregation="items"
+                                    dragStart="onDragStart"
+                                    drop="onDrop"/>
+                    </dragDropConfig>
+                    <CustomTreeItem id="_IDGenStandardTreeItem1">
+                        <VBox id="_IDGenVBox2">
+                            <items>
+                                <core:Fragment fragmentName="{= ${treeModel>type} === 'folder' ? 'myapp.view.FolderFragment' : 'myapp.view.FileFragment'}" type="XML"/>
+                            </items>
+                        </VBox>
+                        --><!--<mvc:XMLView id="treeComponent" viewName="ui.view.contentTypes.Text"></mvc:XMLView>--><!--
+                    </CustomTreeItem>
+                </Tree>
+                -->
+			</Page>
+			<Page
+				id="master2"
+				title="Master 2"
+				backgroundDesign="List"
+				showNavButton="true"
+				navButtonPress=".onPressMasterBack">
+				<List id="_IDGenList2" itemPress=".onListItemPress">
+					<items>
+						<StandardListItem id="_IDGenStandardListItem2" title="To Detail 1" type="Active" custom:to="detail" />
+						<StandardListItem id="_IDGenStandardListItem3" title="To Detail 2" type="Active" custom:to="detailDetail" />
+						<StandardListItem id="_IDGenStandardListItem4" title="To Detail 3" type="Active" custom:to="detail2" />
+					</items>
+				</List>
+			</Page>
+		</masterPages>
+	</SplitApp>
+</mvc:View>

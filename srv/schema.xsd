@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Definition of the Presentation Element -->
+  <xs:element name="Presentation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Title" type="xs:string"/>
+        <xs:element name="Slides" type="SlidesType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Definition of the Slides Element -->
+  <xs:complexType name="SlidesType">
+    <xs:sequence>
+      <xs:element name="Slide" type="SlideType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Definition of the Slide Element -->
+  <xs:complexType name="SlideType">
+    <xs:sequence>
+      <xs:element name="Title" type="xs:string" minOccurs="0"/>
+      <xs:element name="Subtitle" type="xs:string" minOccurs="0"/>
+      <xs:element name="Header" type="xs:string" minOccurs="0"/>
+      <xs:element name="Body" type="xs:string" minOccurs="0"/>
+      <xs:element name="Points" type="PointsType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="type" type="SlideTypeAttribute"/>
+  </xs:complexType>
+
+  <!-- Definition of the Points Element -->
+  <xs:complexType name="PointsType">
+    <xs:sequence>
+      <xs:element name="Point" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Definition of the SlideType Attribute -->
+  <xs:simpleType name="SlideTypeAttribute">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="title"/>
+      <xs:enumeration value="text"/>
+      <xs:enumeration value="bullet-list"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

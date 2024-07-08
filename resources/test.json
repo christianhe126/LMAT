@@ -1,0 +1,233 @@
+{
+    '[Content_Types].xml': { Types: { '$': [Object], Default: [Array], Override: [Array] } },
+    '_rels/.rels': <Buffer 3c 3f 78 6d 6c 20 76 65 72 73 69 6f 6e 3d 22 31 2e 30 22 20 65 6e 63 6f 64 69 6e 67 3d 22 55 54 46 2d 38 22 20 73 74 61 6e 64 61 6c 6f 6e 65 3d 22 79 ... 690 more bytes>,
+    'ppt/slides/slide1.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide2.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide3.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide4.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide5.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide6.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide7.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide8.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide9.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide10.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide11.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide12.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide13.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide14.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide15.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide16.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide17.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide18.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide19.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide20.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide21.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide22.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide23.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide24.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide25.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/slide26.xml': {
+      'p:sld': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slides/_rels/slide25.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide24.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide23.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide22.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide21.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide20.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide19.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide18.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide17.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide16.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide15.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide14.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide13.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide12.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide11.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide10.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide9.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide8.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide7.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide6.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide5.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide4.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide3.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide26.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide2.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slides/_rels/slide1.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/_rels/presentation.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/presentation.xml': {
+      'p:presentation': {
+        '$': [Object],
+        'p:sldMasterIdLst': [Array],
+        'p:sldIdLst': [Array],
+        'p:sldSz': [Array],
+        'p:notesSz': [Array],
+        'p:defaultTextStyle': [Array],
+        'p:extLst': [Array]
+      }
+    },
+    'ppt/slideLayouts/_rels/slideLayout1.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slideLayouts/_rels/slideLayout2.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slideLayouts/_rels/slideLayout3.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slideLayouts/slideLayout1.xml': {
+      'p:sldLayout': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slideLayouts/slideLayout2.xml': {
+      'p:sldLayout': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slideLayouts/slideLayout3.xml': {
+      'p:sldLayout': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slideLayouts/slideLayout4.xml': {
+      'p:sldLayout': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slideLayouts/slideLayout5.xml': {
+      'p:sldLayout': { '$': [Object], 'p:cSld': [Array], 'p:clrMapOvr': [Array] }
+    },
+    'ppt/slideMasters/slideMaster1.xml': {
+      'p:sldMaster': {
+        '$': [Object],
+        'p:cSld': [Array],
+        'p:clrMap': [Array],
+        'p:sldLayoutIdLst': [Array],
+        'p:txStyles': [Array]
+      }
+    },
+    'ppt/slideMasters/_rels/slideMaster1.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slideLayouts/_rels/slideLayout4.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/slideLayouts/_rels/slideLayout5.xml.rels': { Relationships: { '$': [Object], Relationship: [Array] } },
+    'ppt/media/image15.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 71 00 00 00 40 08 06 00 00 00 2d 58 98 d8 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 1258 more bytes>,
+    'ppt/media/image19.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 8c 00 00 00 3f 08 06 00 00 00 32 9e 20 e5 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 1341 more bytes>,
+    'ppt/media/image18.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 ec 00 00 00 41 08 06 00 00 00 d2 51 48 24 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 1372 more bytes>,
+    'ppt/media/image29.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 02 9b 00 00 00 a6 08 02 00 00 00 1a 8b d3 69 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 8277 more bytes>,
+    'ppt/media/image17.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 1a 00 00 00 40 08 06 00 00 00 04 5f 67 5f 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 454 more bytes>,
+    'ppt/media/image16.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 ec 00 00 00 41 08 06 00 00 00 d2 51 48 24 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 1321 more bytes>,
+    'ppt/media/image14.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 8c 00 00 00 3f 08 06 00 00 00 32 9e 20 e5 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 1293 more bytes>,
+    'ppt/media/image13.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 01 20 00 00 00 40 08 06 00 00 00 ba 00 aa 6e 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 1602 more bytes>,
+    'ppt/media/image20.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 71 00 00 00 3e 08 06 00 00 00 1c 70 f4 69 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 1223 more bytes>,
+    'ppt/media/image11.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 87 00 00 00 a6 08 06 00 00 00 f0 17 9c 99 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 15440 more bytes>,
+    'ppt/media/image10.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 29 00 00 00 14 08 06 00 00 00 10 84 14 85 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 649 more bytes>,
+    'ppt/media/image28.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 dc 00 00 00 3a 08 02 00 00 00 54 25 a0 49 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 2385 more bytes>,
+    'ppt/media/image8.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 17 00 00 00 17 08 02 00 00 00 6f 48 43 f7 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 291 more bytes>,
+    'ppt/media/image7.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 01 02 00 00 00 19 08 06 00 00 00 da 29 20 bc 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 522 more bytes>,
+    'ppt/media/image6.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 47 00 00 00 2d 08 06 00 00 00 fc df 76 23 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 838 more bytes>,
+    'ppt/media/image5.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 48 00 00 00 2d 08 06 00 00 00 0d d4 2d ae 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 828 more bytes>,
+    'ppt/media/image4.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 9e 00 00 00 2a 08 06 00 00 00 42 de e2 18 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 1009 more bytes>,
+    'ppt/media/image3.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 1f 00 00 00 29 08 06 00 00 00 cd 8d f2 89 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 611 more bytes>,
+    'ppt/media/image1.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 dd 00 00 00 6d 08 06 00 00 00 25 0e 64 6f 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 4076 more bytes>,
+    'ppt/media/image26.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 01 c3 00 00 00 de 08 02 00 00 00 ce db fc 78 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 7299 more bytes>,
+    'ppt/media/image25.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 63 00 00 00 19 08 02 00 00 00 aa e0 07 65 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 985 more bytes>,
+    'ppt/media/image24.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 01 84 00 00 00 80 08 02 00 00 00 84 39 89 26 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 7317 more bytes>,
+    'ppt/media/image23.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 02 00 00 00 01 27 08 02 00 00 00 50 5b 6c be 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 10385 more bytes>,
+    'ppt/theme/theme1.xml': {
+      'a:theme': {
+        '$': [Object],
+        'a:themeElements': [Array],
+        'a:objectDefaults': [Array],
+        'a:extraClrSchemeLst': [Array]
+      }
+    },
+    'ppt/media/image21.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 1a 00 00 00 3c 08 06 00 00 00 78 bf aa e5 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 460 more bytes>,
+    'ppt/media/image12.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 01 17 00 00 00 40 08 06 00 00 00 30 2f 33 2f 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 1573 more bytes>,
+    'ppt/media/image9.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 00 25 00 00 00 34 08 06 00 00 00 0d 14 f1 3d 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 1125 more bytes>,
+    'ppt/presProps.xml': { 'p:presentationPr': { '$': [Object], 'p:extLst': [Array] } },
+    'ppt/viewProps.xml': {
+      'p:viewPr': {
+        '$': [Object],
+        'p:normalViewPr': [Array],
+        'p:slideViewPr': [Array],
+        'p:notesTextViewPr': [Array],
+        'p:gridSpacing': [Array]
+      }
+    },
+    'ppt/tableStyles.xml': { 'a:tblStyleLst': { '$': [Object], 'a:tblStyle': [Array] } },
+    'docProps/custom.xml': { Properties: { '$': [Object], property: [Array] } },
+    'docProps/app.xml': {
+      Properties: {
+        '$': [Object],
+        Template: [Array],
+        TotalTime: [Array],
+        Words: [Array],
+        Application: [Array],
+        PresentationFormat: [Array],
+        Paragraphs: [Array],
+        Slides: [Array],
+        Notes: [Array],
+        HiddenSlides: [Array],
+        MMClips: [Array],
+        ScaleCrop: [Array],
+        HeadingPairs: [Array],
+        TitlesOfParts: [Array],
+        LinksUpToDate: [Array],
+        SharedDoc: [Array],
+        HyperlinksChanged: [Array],
+        AppVersion: [Array]
+      }
+    },
+    'docProps/core.xml': {
+      'cp:coreProperties': {
+        '$': [Object],
+        'dc:title': [Array],
+        'dc:subject': [Array],
+        'dc:creator': [Array],
+        'cp:lastModifiedBy': [Array],
+        'cp:revision': [Array],
+        'dcterms:created': [Array],
+        'dcterms:modified': [Array]
+      }
+    },
+    'ppt/media/image27.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 02 9f 00 00 01 f5 08 02 00 00 00 3f 0d 02 fe 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 20912 more bytes>,
+    'ppt/media/image22.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 01 f0 00 00 01 84 08 02 00 00 00 46 7d e5 66 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 17403 more bytes>,
+    'ppt/media/image2.png': <Buffer 89 50 4e 47 0d 0a 1a 0a 00 00 00 0d 49 48 44 52 00 00 0a 01 00 00 05 a0 08 06 00 00 00 7d c2 71 e1 00 00 00 06 62 4b 47 44 00 ff 00 ff 00 ff a0 bd a7 ... 2826835 more bytes>
+  }

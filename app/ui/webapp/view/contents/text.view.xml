@@ -1,0 +1,19 @@
+<mvc:View controllerName="ui.controller.contents.text"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:richtexteditor="sap.ui.richtexteditor">
+    <Label text="Content"/>
+    <Input value="{content/source}" 
+                                width="100%">
+    </Input>
+    <!--<richtexteditor:RichTextEditor id="richTextEditor1" 
+                                value="{content/source}" 
+                                width="100%"
+                                height="300px"
+                                editorType="TinyMCE"
+                                showGroupFont="true"
+                                showGroupLink="true"
+                                showGroupInsert="true">
+    </richtexteditor:RichTextEditor>-->
+</mvc:View>

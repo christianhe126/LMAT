@@ -1,0 +1,4 @@
+contentTypeID,name,description
+T001, Section,Chapter
+T002, RichText,Content
+T005, Reuse, Reused Content

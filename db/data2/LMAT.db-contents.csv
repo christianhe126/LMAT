@@ -1,0 +1,11 @@
+contentID,contentType_contentTypeID,source,reused
+C001,T001,{"title": "Section 1"},null
+C003,T002,"<ul>\n<li>BTP stands for SAP Business Technology Platform</li>\n<li>A technology platform that brings together data and analytics, artificial intelligence, application development, automation, and integration in one, unified environment</li>\n</ul>", artificial intelligence, application development, automation, and integration in one, unified environment</li>\n</ul>",null
+C004,T001,{"title": "Section 2"},null
+C005,T002,"<ul>\n<li>In BTP free tier administrators need to configure their entitlements themselves</li>\n<li>For the development curriculum following entitlements are necessary:</li>\n<li>Other entitlements are already available when subaccount is provisioned</li>\n</ul>",null
+C008,T001,{"title":"1. What is SAP BTP?"},null
+C009,T001,"{'title':'Use Cases','vertical':1}",null
+C013,T001,{"title":"2. SAP BTP: Customer Stories"}, null
+C015,T001,{"title":"3. Entitlements for Development"}, null
+C016,T001,{"title":"4. ABAP Project vs. ABAP Cloud Project"}, null
+C020,T002,"<p>&nbsp;</p>\n<p>... and more: sap.com/products/technology platform/customer-stories.html</p>", null

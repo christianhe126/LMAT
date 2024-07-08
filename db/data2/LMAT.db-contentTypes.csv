@@ -1,0 +1,6 @@
+contentTypeID,name,description
+T001, Section,Section
+T002, RichText,Rich Text
+T003, Table, Table
+T004, Image, Image
+T005, Reuse, Reuse

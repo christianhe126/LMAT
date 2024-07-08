@@ -1,0 +1,12 @@
+<mvc:View controllerName="ui.controller.contentTypes.Text"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+
+    <HBox id="_IDGenVBox2" justifyContent="SpaceBetween" alignItems="Center" width="100%" height="20px">
+        <Text id="_IDGenText2" text="Text Element" />
+        <HBox id="_IDGenHBox1">
+            <Button id="_IDGenButton2" text="∧" press="treeItemUpPress" class="sapUiTinyMargin" />
+            <Button id="_IDGenButton3" text="∨" press="treeItemDownPress" class="sapUiTinyMargin" />
+        </HBox>
+    </HBox>
+</mvc:View>

@@ -1,0 +1,20 @@
+<Presentation>
+  <Title>Sample Presentation</Title>
+  <Slides>
+    <Slide type="title">
+      <Title>Welcome to the Presentation</Title>
+      <Subtitle>An introduction to our topic</Subtitle>
+    </Slide>
+    <Slide type="text">
+      <Header>Main Point 1</Header>
+      <Body>Detailed description or discussion about the main point.</Body>
+    </Slide>
+    <Slide type="bullet-list">
+      <Points>
+        <Point>Bullet Point 1</Point>
+        <Point>Bullet Point 2</Point>
+        <Point>Bullet Point 3</Point>
+      </Points>
+    </Slide>
+  </Slides>
+</Presentation>

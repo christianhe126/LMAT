@@ -1,0 +1,144 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ui.controller.detail"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:form="sap.ui.layout.form" xmlns:table="sap.ui.table" xmlns:unified="sap.ui.unified" xmlns:richtexteditor="sap.ui.richtexteditor">
+	<App>
+		<pages>
+			<Page title="{entityID}" navButtonPress="onNavBack" showNavButton="{device>/system/phone}">
+				<content>
+					<form:SimpleForm
+                        layout="ResponsiveGridLayout"
+                        labelSpanXL="4"
+                        labelSpanL="1"
+                        labelSpanM="1"
+                        labelSpanS="1"
+                        adjustLabelSpan="false"
+                        emptySpanXL="0"
+                        emptySpanL="4"
+                        emptySpanM="0"
+                        emptySpanS="0"
+                        columnsXL="2"
+                        columnsL="1"
+                        columnsM="1"
+                        singleContainerFullSize="false"
+                        editable="true">
+                        <form:content>
+                            <core:Title text="{path: 'content/contentType/name', formatter: '.formatter.contentAndTypeFormatter'}" />
+                            <!--<ComboBox id="comboBoxContentType" items="{contentTypes>/value}" selectedKey="{content/contentType/name}" width="200px">
+                                <core:Item id="_IDGenItem1" key="{contentTypes>name}" text="{contentTypes>name}"/>
+                            </ComboBox>-->
+
+                            
+                            <VBox justifyContent="Start">
+                                <!--ContentType: Section
+                                <Label text="Title" visible="{= %{content/contentType/name} === 'Section' }"></Label>
+                                <Input value="{content/source}" visible="{= %{content/contentType/name} === 'Section' }"></Input>-->
+                                <VBox visible="{= %{content/contentType/name} === 'Section' }">
+                                    <Label text="Title" />
+                                    <Input value="{path: 'content/source', formatter: '.formatter.parseTitle'}"
+                                        change="onTitleChange" />
+                                    <!--<List id="checkBoxSectionType" class="horizontalList" selectionChange="onVerticalSelectionChanged">
+                                        <CustomListItem>
+                                            <Image width="130px" src="resources/sys/horizontal.png"></Image>
+                                        </CustomListItem>
+                                        <CustomListItem>
+                                            <Image width="130px" src="resources/sys/vertical.png"></Image>
+                                        </CustomListItem>
+                                    </List>-->
+                                    <Label text="Layout" />
+                                    <RadioButtonGroup selectedIndex="{path: 'content/source', formatter: '.formatter.parseVertical', targetType: 'any'}" select="onLayoutButtonSelect">
+                                        <RadioButton text="Vertical" selected="true" />
+                                        <RadioButton text="Horizontal" />
+                                    </RadioButtonGroup>
+
+                                    <!--
+                                    <Label text="Vertical" />
+                                    <Input value="{path: 'content/source', formatter: '.formatter.parseVertical'}"
+                                        change="onVerticalChange" />
+
+                                    <Label text="Widths" />
+                                    <Input value="{path: 'content/source', formatter: '.formatter.parseWidth'}"
+                                        change="onWidthChange" />-->
+                                </VBox>
+                                <!--ContentType: Image-->
+                                <mvc:XMLView viewName="ui.view.contents.image" visible="{= %{content/contentType/name} === 'Image' }"/>
+                                <!--ContentType: RichText-->
+                                <richtexteditor:RichTextEditor id="richTextEditor1" 
+                                    visible="{= %{content/contentType/name} === 'RichText' }"
+                                    value="{content/source}" 
+                                    width="100%"
+                                    height="300px"
+                                    editorType="TinyMCE"
+                                    showGroupFont="true"
+                                    showGroupLink="true"
+                                    showGroupInsert="true">
+                                </richtexteditor:RichTextEditor>
+                            </VBox>
+
+                            
+
+                            
+                            
+
+
+                            <!--<Label text="Layout" visible="{= %{content/contentType/name} === 'Section' }"/>
+                            <HBox visible="{= %{content/contentType/name} === 'Section' }">
+                                <List id="checkBoxSectionType" class="horizontalList">
+                                    <CustomListItem>
+                                        <Image src="resources/title_and_content.png"></Image>
+                                    </CustomListItem>
+                                    <CustomListItem>
+                                        <Image src="resources/two_contents.png"></Image>
+                                    </CustomListItem>
+                                </List>
+                            </HBox>-->
+                            
+                            <core:Title text="{= %{content/contentType/name} !== 'Section' ? 'Automate' : ''}"/>
+
+                            <!--
+                            <Label text="Activated" visible="{= %{content/contentType/name} !== 'Section' }"/>
+                            <Switch state="{content/automated}" enabled="{= %{content/contentType/name} !== 'Section' }" visible="{= %{content/contentType/name} !== 'Section' }">
+                                    <layoutData>
+                                        <FlexItemData id="_IDGenFlexItemData1" growFactor="1" />
+                                    </layoutData>
+                            </Switch>-->
+
+                            <VBox visible="{= %{content/contentType/name} !== 'Section'}">
+                                <Table id="automationTable" items="{myModel>/automations}">
+                                    <columns>
+                                        <Column>
+                                            <Text text="Tag"/>
+                                        </Column>
+                                        <Column>
+                                            <Text text="URL"/>
+                                        </Column>
+                                        <Column>
+                                            <Text text="Selector"/>
+                                        </Column>
+                                    </columns>
+                                    <items>
+                                        <ColumnListItem>
+                                            <cells>
+                                                <Label text="{myModel>tag}"/>
+                                                <Label text="{myModel>url}"/>
+                                                <Label text="{myModel>selector}"/>
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
+                                </Table>
+                                
+                                <HBox>
+                                    <Input id="automationTagInput" placeholder="Tag" width="100px" liveChange="onTagLiveChange"/>
+                                    <Input id="urlInput" placeholder="Url" width="200px"/>
+                                    <Input id="selectorInput" placeholder="Selector" width="200px"/>
+                                    <Button text="Add" icon="sap-icon://add" press="onAddAutomationPress" />
+                                </HBox>
+                                
+                            </VBox>
+                            
+                            
+                        </form:content>
+                    </form:SimpleForm>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

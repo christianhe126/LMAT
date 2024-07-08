@@ -1,0 +1,13 @@
+.horizontalList .sapMListUl {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    list-style-type: none;
+    overflow-x: auto; /* Enables horizontal scrolling if there are many items */
+}
+
+.horizontalList .sapMListUl > li {
+    display: flex;
+    align-items: center; /* Align items vertically in the center if needed */
+    margin-right: 10px; /* Adds spacing between items */
+}

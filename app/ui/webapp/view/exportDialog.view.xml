@@ -1,0 +1,59 @@
+<mvc:View
+    controllerName="ui.controller.exportDialog"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:unified="sap.ui.unified">
+    <Dialog
+        id="exportDialog"
+        title="Export"
+        contentWidth="95%"
+        contentHeight="95%"
+        afterClose="onDialogClose">
+        <content>
+            <VBox
+                class="sapUiSmallMargin"
+                justifyContent="Center"
+                alignItems="Center">
+                <form:SimpleForm
+                    editable="true"
+                    layout="ResponsiveGridLayout"
+                    labelSpanL="3"
+                    labelSpanM="3"
+                    labelSpanS="12"
+                    emptySpanL="0"
+                    emptySpanM="0"
+                    emptySpanS="0"
+                    columnsL="1"
+                    columnsM="1">
+                    <Label text="File format"/>
+                    <ComboBox id="fileFormatComboBox" selectedKey=".pptx">
+                        <items>
+                            <core:Item key=".pptx" text="PowerPoint (Slides)"/>
+                            <core:Item key=".docx" text="Word (A4)"/>
+                            <core:Item key=".xml" text="XML"/>
+                        </items>
+                    </ComboBox>
+                
+                    <Label text="Template (optional)"/>
+                    <VBox justifyContent="Start">
+                        <unified:FileUploader
+                            id="fileUploader"
+                            change="onFileChange"
+                            placeholder="Default_UCC_template.pptx"/>
+                        <!--<Button
+                            text="Upload template"
+                            press="onUploadPress" />-->
+                    </VBox>
+                </form:SimpleForm>
+            </VBox>
+        </content>
+        <beginButton>
+            <Button text="Cancel" press="onCancel"/>
+        </beginButton>
+        <endButton>
+            <Button text="Export" press="onExport"/>
+        </endButton>
+    </Dialog>
+</mvc:View>

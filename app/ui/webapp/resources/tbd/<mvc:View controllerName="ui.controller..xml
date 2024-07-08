@@ -1,0 +1,38 @@
+<mvc:View controllerName="ui.controller.detail" xmlns="sap.m" xmlns:sap.ui.core="sap.ui.core" 
+    xmlns:mvc="sap.ui.core.mvc" xmlns:form="sap.ui.layout.form" xmlns:rte="sap.ui.richtexteditor">
+    <App>
+        <pages>
+            <Page title="{entityID}" navButtonPress="onNavBack" showNavButton="true">
+                <content>
+                    <form:SimpleForm ...>
+                    <form:content>
+                        <!-- ContentType: Section -->
+                        <VBox id="sectionContainer" 
+                            visible="{= ${content/contentType/name} === 'Section' }"/>
+
+                        <!-- ContentType: Image -->
+                        <mvc:XMLView id="imageUpload" viewName="ui.view.contents.image" 
+                            visible="{= ${content/contentType/name} === 'Image' }"/>
+
+                        <!-- ContentType: RichText -->
+                        <rte:RichTextEditor id="RichTextEditor" 
+                            visible="{= ${content/contentType/name} === 'RichText'}"/> 
+                    </form:content>
+                    </form:SimpleForm>
+                </content>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>
+
+<table:Column sortProperty="{myModel>order}" sortOrder="Ascending" width="10rem">
+    <Label text="ID"/>
+        <table:template>
+            <HBox>
+                <items>
+                    <core:Icon src="sap-icon://refresh" size="1rem" class="sapUiTinyMarginEnd" visible="{= ${myModel>content/reused} === true }"/>
+                    <Text text="{path: 'myModel>content/source', formatter: '.formatter.parseTitle'}" wrapping="false"/>
+                </items>
+            </HBox>
+    </table:template>
+</table:Column>

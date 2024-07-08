@@ -1,0 +1,110 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ui.controller.detail"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:form="sap.ui.layout.form" xmlns:table="sap.ui.table" xmlns:unified="sap.ui.unified" xmlns:richtexteditor="sap.ui.richtexteditor">
+	<App>
+		<pages>
+			<Page title="{entityID}" navButtonPress="onNavBack" showHeader="false" showNavButton="{device>/system/phone}">
+                <customHeader>
+					<Bar>
+						<contentLeft>
+                            <Text text="{entityID}"/>
+                            <!--<Button id="removeReuse" text="Detach Reuse" icon="sap-icon://decline" press="removeReuse"/>-->
+						</contentLeft>
+					</Bar>
+				</customHeader>
+				<content>
+                    <IconTabBar>
+                        <items>
+                            <IconTabFilter text="Details" visible="false">
+                                <content>
+                                    <VBox id="sectionContainer" visible="{= %{content/contentType/name} === 'Section' }">
+                                    <Label text="Title" />
+                                    <Input value="{path: 'content/source', formatter: '.formatter.parseTitle'}"
+                                        change="onTitleChange" />
+                                    <Label text="Layout" class="sapUiTinyMarginTop"/>
+                                    <RadioButtonGroup class="sapUiTinyMarginBegin" selectedIndex="{path: 'content/source', formatter: '.formatter.parseVertical', targetType: 'any'}" select="onLayoutButtonSelect" columns="2">
+                                        <RadioButton text="Vertical" selected="true" class="sapUiLargeMarginEnd" />
+                                        <RadioButton text="Horizontal" />
+                                    </RadioButtonGroup>
+                                    <HBox>
+                                        <Image src="resources/sys/vertical.png" width="100px" class="sapUiMediumMarginEnd"></Image>
+                                        <Image src="resources/sys/horizontal.png" width="100px"></Image>
+                                    </HBox>
+                                </VBox>
+                                </content>
+                            </IconTabFilter>
+                            <IconTabFilter text="Details">
+                                <content>
+                                    <VBox fitContainer="true" height="100%" alignItems="Stretch" justifyContent="Start" class="flexGrow">
+                                        <richtexteditor:RichTextEditor id="richTextEditor"
+                                        value="{source}" 
+                                        width="100%"
+                                        height="800px"
+                                        editorType="TinyMCE5"
+                                        showGroupFont="false"
+                                        showGroupLink="false"
+                                        showGroupInsert="true"
+                                        showGroupClipboard="false"
+                                        showGroupTextAlign="false"
+                                        change="onRichTextEditorChange"
+                                        
+                                        customToolbar="true"
+                                        ready="onRichTextEditorReady"
+                                        sanitizeValue="false"
+                                        visible="true"
+                                        >
+                                        </richtexteditor:RichTextEditor>
+                                    </VBox>
+                                </content>
+                            </IconTabFilter>
+                            <IconTabFilter text="Automation" visible="{= %{content/contentType/name} !== 'Section'}">
+                                <content>
+                                    <VBox id="AutomationContainer" visible="{= %{content/contentType/name} !== 'Section'}">
+                                        <Table id="automationTable" items="{content/automations}">
+                                            <columns>
+                                                <Column width="100px">
+                                                    <Text text="Tag"/>
+                                                </Column>
+                                                <Column width="200px">
+                                                    <Text text="URL"/>
+                                                </Column>
+                                                <Column>
+                                                    <Text text="Value"/>
+                                                </Column>
+                                                <Column width="120px">
+                                                    <Text text="Last Update"/>
+                                                </Column>
+                                                <Column width="30px" hAlign="Center">
+                                                    <Text text=""/>
+                                                </Column>
+                                            </columns>
+                                            <items>
+                                                <ColumnListItem>
+                                                    <cells>
+                                                        <Label text="{tag}"/>
+                                                        <Link text="{url}" href="{url}" target="_blank"/>
+                                                        <Label text="{path: 'result', formatter: '.formatter.parseAutomationResult'}"/>
+                                                        <Label text="{path: 'lastUpdate', formatter: '.formatter.formatLastUpdate'}"/>
+                                                        <core:Icon id="" src="sap-icon://decline" press="onDeletePress" />
+                                                    </cells>
+                                                </ColumnListItem>
+                                            </items>
+                                        </Table>
+                                        
+                                        <HBox class="sapUiTinyMarginTop">
+                                            <Input id="automationTagInput" placeholder="Tag" width="100px" liveChange="onTagLiveChange" class="sapUiTinyMarginEnd"/>
+                                            <Input id="urlInput" placeholder="Url" width="200px" class="sapUiTinyMarginEnd"/>
+                                            <Input id="selectorInput" placeholder="Selector" width="200px" class="sapUiTinyMarginEnd"/>
+                                            <Button text="Add" icon="sap-icon://add" press="onAddAutomationPress" class="sapUiTinyMarginEnd"/>
+                                            <Button icon="sap-icon://synchronize" press="onSyncAutomationPress" class="sapUiTinyMarginEnd"/>
+                                        </HBox>
+                                        
+                                    </VBox>
+                                </content>
+                            </IconTabFilter>
+                        </items>
+                    </IconTabBar>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,9 @@
+entityID,document_documentID,content_contentID,parentNodeID,hierarchyLevel,drillState,order
+E002,P001,C003,E006,1,"expanded",0
+E003,P001,C005,E013,1,"expanded",0
+E006,P001,C008,null,0,"expanded",null
+E007,P001,C009,E011,1,"expanded",2
+E011,P001,C013,null,0,"expanded",null
+E013,P001,C015,null,0,"leaf",0
+E014,P001,C016,null,0,"expanded",0
+E018,P001,C020,E011,1,"expanded",3
